@@ -1,7 +1,7 @@
 --- #YAML:1.0
 name:               Dancer-Plugin-Browser
-version:            0.2
-abstract:           easy to have info of the browser.
+version:            0.4
+abstract:           ~
 author:
     - Natal Ngétal <hobbestigrou@erakis.im>
 license:            unknown
