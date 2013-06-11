@@ -5,7 +5,7 @@ use Test::More tests => 1;                      # last test to print
 
 
 BEGIN {
-    use_ok( 'Dancer::Plugin::Browser' ) || print "Bail out";
+    use_ok( 'Dancer2::Plugin::BrowserDetect' ) || print "Bail out";
 }
 
-diag( "Testing Dancer::Plugin::Browser $Dancer::Plugin::Browser::VERSION, Perl $], $^X" );
+diag( "Testing Dancer2::Plugin::Browser $Dancer2::Plugin::BrowserDetect::VERSION, Perl $], $^X" );

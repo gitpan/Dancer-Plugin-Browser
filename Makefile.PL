@@ -9,10 +9,10 @@ use ExtUtils::MakeMaker 6.30;
 
 
 my %WriteMakefileArgs = (
-  "ABSTRACT" => "Easy to detect browser.",
+  "ABSTRACT" => "Provides an easy to have info of the browser.",
   "AUTHOR" => "Natal Ng\303\251tal",
   "BUILD_REQUIRES" => {
-    "Dancer::Test" => 0,
+    "Dancer2::Test" => 0,
     "Data::Dumper" => 0,
     "Module::Build" => "0.3601",
     "Test::More" => 0
@@ -27,12 +27,13 @@ my %WriteMakefileArgs = (
   "NAME" => "Dancer::Plugin::Browser",
   "PREREQ_PM" => {
     "Dancer" => "1.2001",
-    "Dancer::Plugin" => 0,
+    "Dancer2" => 0,
+    "Dancer2::Plugin" => 0,
     "HTTP::BrowserDetect" => 0,
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "1.130570",
+  "VERSION" => "1.131620",
   "test" => {
     "TESTS" => "t/*.t"
   }

@@ -7,8 +7,7 @@ META.yml
 Makefile.PL
 README
 dist.ini
-lib/Dancer/Plugin/Browser.pm
-lib/Dancer/Plugin/Browser/Detect.pm
+lib/Dancer2/Plugin/BrowserDetect.pm
 t/00-load.t
 t/01-basic.t
 t/lib/TestApp.pm

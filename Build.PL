@@ -7,7 +7,7 @@ use Module::Build 0.3601;
 
 my %module_build_args = (
   "build_requires" => {
-    "Dancer::Test" => 0,
+    "Dancer2::Test" => 0,
     "Data::Dumper" => 0,
     "Module::Build" => "0.3601",
     "Test::More" => 0
@@ -16,19 +16,20 @@ my %module_build_args = (
     "ExtUtils::MakeMaker" => "6.30",
     "Module::Build" => "0.3601"
   },
-  "dist_abstract" => "Easy to detect browser.",
+  "dist_abstract" => "Provides an easy to have info of the browser.",
   "dist_author" => [
     "Natal Ng\303\251tal"
   ],
   "dist_name" => "Dancer-Plugin-Browser",
-  "dist_version" => "1.130570",
+  "dist_version" => "1.131620",
   "license" => "perl",
   "module_name" => "Dancer::Plugin::Browser",
   "recommends" => {},
   "recursive_test_files" => 1,
   "requires" => {
     "Dancer" => "1.2001",
-    "Dancer::Plugin" => 0,
+    "Dancer2" => 0,
+    "Dancer2::Plugin" => 0,
     "HTTP::BrowserDetect" => 0,
     "strict" => 0,
     "warnings" => 0

@@ -6,15 +6,17 @@
 # This is free software; you can redistribute it and/or modify it under
 # the same terms as the Perl 5 programming language system itself.
 #
-package Dancer::Plugin::Browser::Detect;
+package Dancer2::Plugin::BrowserDetect;
 {
-  $Dancer::Plugin::Browser::Detect::VERSION = '1.130570';
+  $Dancer2::Plugin::BrowserDetect::VERSION = '1.131620';
 }
 
 use strict;
 use warnings;
-use Dancer ':syntax';
-use Dancer::Plugin;
+
+use Dancer2 ':syntax';
+use Dancer2::Plugin;
+
 use HTTP::BrowserDetect;
 
 #ABSTRACT: Provides an easy to have info of the browser.
@@ -37,7 +39,7 @@ sub _browser_detect {
     return $browser;
 }
 
-register_plugin for_versions => [1, 2];
+register_plugin for_versions => [2];
 
 
 1;
@@ -48,16 +50,16 @@ __END__
 
 =head1 NAME
 
-Dancer::Plugin::Browser::Detect - Provides an easy to have info of the browser.
+Dancer2::Plugin::BrowserDetect - Provides an easy to have info of the browser.
 
 =head1 VERSION
 
-version 1.130570
+version 1.131620
 
 =head1 SYNOPSIS
 
-    use Dancer;
-    use Dancer::Plugin::Browser::Detect;
+    use Dancer2;
+    use Dancer2::Plugin::BrowserDetect;
 
     get '/' => sub {
         my $browser = browser_detect();
@@ -89,10 +91,31 @@ To have info of the browser
 
 =encoding utf8
 
+=head1 CONTRIBUTING
+
+This module is developed on Github at:
+
+L<http://github.com/hobbestigrou/Dancer2-Plugin-BrowserDetect>
+
+Feel free to fork the repo and submit pull requests
+
+=head1 BUGS
+
+Please report any bugs or feature requests in github.
+
+=head1 SUPPORT
+
+You can find documentation for this module with the perldoc command.
+
+    perldoc Dancer2::Plugin::BrowserDetect
+
 =head1 SEE ALSO
 
 L<Dancer>
 L<HTTP::BrowserDetect>
+L<Catalyst::TraitFor::Request::BrowserDetect>
+L<Mojolicious::Plugin::BrowserDetect>
+L<Dancer::Plugin::Browser>
 
 =head1 AUTHOR
 

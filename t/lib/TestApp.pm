@@ -6,13 +6,15 @@
 # This is free software; you can redistribute it and/or modify it under
 # the same terms as the Perl 5 programming language system itself.
 #
-package t::lib::TestApp;
+package TestApp;
 
-use Dancer;
-use Dancer::Plugin::Browser::Detect;
+use Dancer2;
+use Dancer2::Plugin::BrowserDetect;
+
+use Data::Dumper;
 
 get '/' => sub {
-    return browser_detect();;
+    return Dumper(browser_detect());
 };
 
 1;
