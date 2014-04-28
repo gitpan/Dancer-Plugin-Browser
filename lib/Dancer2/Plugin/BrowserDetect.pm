@@ -1,14 +1,14 @@
 #
 # This file is part of Dancer-Plugin-Browser
 #
-# This software is copyright (c) 2013 by Natal Ngétal.
+# This software is copyright (c) 2014 by Natal Ngétal.
 #
 # This is free software; you can redistribute it and/or modify it under
 # the same terms as the Perl 5 programming language system itself.
 #
 package Dancer2::Plugin::BrowserDetect;
 {
-  $Dancer2::Plugin::BrowserDetect::VERSION = '1.131620';
+  $Dancer2::Plugin::BrowserDetect::VERSION = '1.141180';
 }
 
 use strict;
@@ -54,7 +54,7 @@ Dancer2::Plugin::BrowserDetect - Provides an easy to have info of the browser.
 
 =head1 VERSION
 
-version 1.131620
+version 1.141180
 
 =head1 SYNOPSIS
 
@@ -95,7 +95,7 @@ To have info of the browser
 
 This module is developed on Github at:
 
-L<http://github.com/hobbestigrou/Dancer2-Plugin-BrowserDetect>
+L<https://github.com/hobbestigrou/Dancer2-Plugin-Browser>
 
 Feel free to fork the repo and submit pull requests
 
@@ -123,7 +123,7 @@ Natal Ngétal
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Natal Ngétal.
+This software is copyright (c) 2014 by Natal Ngétal.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
